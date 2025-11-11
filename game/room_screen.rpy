@@ -34,7 +34,7 @@ screen room_evening:
 
 screen stats_display:
         frame:
-            xalign 0.95 # Adjust position as needed
+            xalign 0.95
             yalign 0.05
 
             background "stats_frame.png"

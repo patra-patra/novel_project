@@ -6,3 +6,4 @@ label school_day1:
     $ school_day = school_day + 1
 
     call screen room
+    

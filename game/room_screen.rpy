@@ -8,8 +8,20 @@ init:
 
 label room_screen:
 
-screen room:
+screen room_morning:
     add "bg room_day.png"
+
+    imagebutton:
+        xpos 606
+        ypos 718
+        idle "school_idle.png"
+        hover "school_hover.png"
+        action Jump("school_day" + str(school_day))
+    
+    use stats_display
+
+screen room_evening:
+    add "bg room_evening.png"
 
     imagebutton:
         xpos 606
@@ -22,10 +34,10 @@ screen room:
 
 screen stats_display:
         frame:
-            # Optional: Add a background image or color for the stats frame
-            # background "stats_frame.png"
             xalign 0.95 # Adjust position as needed
             yalign 0.05
+
+            background "stats_frame.png"
 
             vbox:
                 text "День: [day]"

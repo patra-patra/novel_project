@@ -1,5 +1,10 @@
 label school_day2:
     "Второй день"
-    $ school_day = school_day + 1
+    $ school_day += 1
 
-    call screen room
+    $ day += 1
+    $ money += 500
+    $ current_time = "evening"
+
+
+    call screen room_evening

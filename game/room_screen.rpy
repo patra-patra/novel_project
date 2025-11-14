@@ -1,5 +1,5 @@
 init:
-    $ money = 2000 
+    $ money = 0 
     $ day = 1
     $ current_time = "morning"  # morning/evening
     $ available_jobs = ["cleaner", "shop"]  # Доступные работы

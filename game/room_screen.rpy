@@ -1,5 +1,5 @@
 init:
-    $ money = 2000 
+    $ money = 0 
     $ day = 1
     $ current_time = "morning"  # morning/evening
     $ available_jobs = ["cleaner", "shop"]  # Доступные работы
@@ -23,7 +23,7 @@ screen room_morning:
         ypos 0
         idle "wardrobe_idle.png"
         hover "wardrobe_hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump("wardrobe")
     
     use stats_display_morning
 
@@ -42,7 +42,7 @@ screen room_evening:
         ypos 0
         idle "wardrobe_idle.png"
         hover "wardrobe_hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump("wardrobe")
     
     use stats_display_evening
 

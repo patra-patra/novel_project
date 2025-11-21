@@ -23,7 +23,7 @@ screen room_morning:
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("wardrobe")
+        action Jump("school_day" + str(school_day))
     
     imagebutton:
         xpos 1186
@@ -70,7 +70,7 @@ screen room_evening:
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("wardrobe")
+        action Jump("school_day" + str(school_day))
     
     imagebutton:
         xpos 1186

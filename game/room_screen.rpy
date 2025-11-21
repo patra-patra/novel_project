@@ -9,39 +9,95 @@ init:
 label room_screen:
 
 screen room_morning:
-    add "bg room_day.png"
+    add "bg room morning.png"
 
     imagebutton:
-        xpos 606
-        ypos 718
-        idle "school_idle.png"
-        hover "school_hover.png"
+        xpos 956
+        ypos 725
+        idle "heels idle.png"
+        hover "heels hover.png"
         action Jump("school_day" + str(school_day))
     
     imagebutton:
-        xpos 638
-        ypos 0
-        idle "wardrobe_idle.png"
-        hover "wardrobe_hover.png"
+        xpos 207
+        ypos 867
+        idle "notebooks idle.png"
+        hover "notebooks hover.png"
+        action Jump("wardrobe")
+    
+    imagebutton:
+        xpos 1186
+        ypos 427
+        idle "tv idle.png"
+        hover "tv hover.png"
+        action Jump("wardrobe")
+    
+    imagebutton:
+        xpos 836
+        ypos 128
+        idle "wardrobe idle.png"
+        hover "wardrobe hover.png"
+        action Jump("wardrobe")
+
+    imagebutton:
+        xpos 361
+        ypos 167
+        idle "snowgirl idle.png"
+        hover "snowgirl hover.png"
+        action Jump("wardrobe")
+
+    imagebutton:
+        xpos 652
+        ypos 925
+        idle "flyers idle.png"
+        hover "flyers hover.png"
         action Jump("wardrobe")
     
     use stats_display_morning
 
 screen room_evening:
-    add "bg room_evening.png"
+    add "bg room evening.png"
 
     imagebutton:
-        xpos 325
-        ypos 163
-        idle "adv_idle.png"
-        hover "adv_hover.png"
+        xpos 956
+        ypos 725
+        idle "heels idle.png"
+        hover "heels hover.png"
         action Jump("school_day" + str(school_day))
+    
+    imagebutton:
+        xpos 207
+        ypos 867
+        idle "notebooks idle.png"
+        hover "notebooks hover.png"
+        action Jump("wardrobe")
+    
+    imagebutton:
+        xpos 1186
+        ypos 427
+        idle "tv idle.png"
+        hover "tv hover.png"
+        action Jump("wardrobe")
+    
+    imagebutton:
+        xpos 836
+        ypos 128
+        idle "wardrobe idle.png"
+        hover "wardrobe hover.png"
+        action Jump("wardrobe")
 
     imagebutton:
-        xpos 638
-        ypos 0
-        idle "wardrobe_idle.png"
-        hover "wardrobe_hover.png"
+        xpos 361
+        ypos 167
+        idle "snowgirl idle.png"
+        hover "snowgirl hover.png"
+        action Jump("wardrobe")
+
+    imagebutton:
+        xpos 652
+        ypos 925
+        idle "flyers idle.png"
+        hover "flyers hover.png"
         action Jump("wardrobe")
     
     use stats_display_evening

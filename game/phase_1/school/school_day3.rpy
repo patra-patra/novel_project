@@ -1,7 +1,8 @@
 label school_day3:
     $ days_worked["school"] += 1
     $ day += 0.5
-    $ money += 50 
+    $ money += 50
+    $ current_time = "evening"
 
     scene bg street_evening
     with fade
@@ -123,6 +124,7 @@ label school_day3:
             jump choose_left
             
         "Выбрать центральный стаканчик":
+            $ works_score["school"] += 2
             jump choose_center
             
         "Выбрать правый стаканчик":
@@ -135,6 +137,7 @@ label school_day3:
     v "Мимо."
     "Он поднимает стаканчик - под ним пусто. Монетка оказывается под правым."
     "Влад забирает мои деньги. Я проиграла. Свои кровные, отложенные до зарплаты, я проиграла в гараже за пять минут."
+    "Пора домой..."
     jump lose_ending
 
 label choose_center:
@@ -154,6 +157,7 @@ label choose_right:
     v "Мимо"
     "Он поднимает стаканчик - под ним пусто. Монетка оказывается под левым."
     "Влад забрал мои деньги. Я проиграла. Свои кровные, отложенные до зарплаты, я проиграла в гараже за пять минут."
+    "Пора домой..."
     
     call screen room_evening
 

@@ -15,14 +15,20 @@ screen room_morning:
         ypos 725
         idle "heels idle.png"
         hover "heels hover.png"
-        action Jump("school_day" + str(days_worked["school"]))
+        if days_worked["school"] >= 4:
+            action Jump("rootine_school")
+        else:
+            action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 207
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("school_day" + str(days_worked["school"]))
+        if days_worked["school"] >= 4:
+            action Jump("rootine_school")
+        else:
+            action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 1186
@@ -43,7 +49,7 @@ screen room_morning:
         ypos 167
         idle "snowgirl idle.png"
         hover "snowgirl hover.png"
-        action Jump("wardrobe")
+        action Jump("snowgirl_day1")
 
     imagebutton:
         xpos 652
@@ -62,14 +68,14 @@ screen room_evening:
         ypos 725
         idle "heels idle.png"
         hover "heels hover.png"
-        action Jump("school_day")
+        action Jump("snowgirl_day1")
     
     imagebutton:
         xpos 207
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("school_day" + str(days_worked["school"]))
+        # action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 1186
@@ -90,7 +96,7 @@ screen room_evening:
         ypos 167
         idle "snowgirl idle.png"
         hover "snowgirl hover.png"
-        action Jump("wardrobe")
+        action Jump("snowgirl_day1")
 
     imagebutton:
         xpos 652

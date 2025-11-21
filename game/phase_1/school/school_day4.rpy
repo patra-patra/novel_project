@@ -1,7 +1,8 @@
 label school_day4:
     $ days_worked["school"] += 1
-
     $ day += 0.5
+    $ money += 50
+    $ current_time = "evening"
 
     scene bg teacher_room with fade
     

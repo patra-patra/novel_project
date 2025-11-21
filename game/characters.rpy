@@ -14,6 +14,7 @@ define student1 = Character('Ученик 1', color="#908080")
 define student2 = Character('Ученик 2', color="#808780")
 define student3 = Character('Ученик 3', color="#801080")
 define elena = Character('Елена Петровна', color="#ff69b4")
+
 define a = Character("Артем", color="#1E90FF")
 define ser = Character("Сергей", color="#228B22")
 define k = Character("Катя", color="#FF1493")

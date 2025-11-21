@@ -1,9 +1,6 @@
-init:
-    $ school_day = 1
-
 label school_day1:
+    $ days_worked["school"] += 1
 
-    $ school_day = school_day + 1
     $ day = day + 1
 
     scene bg director_office_day

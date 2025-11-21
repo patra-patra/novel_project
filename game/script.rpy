@@ -172,6 +172,4 @@
         "Может, они даже предложат мне работу."
         show sveta_relaxed_2000s
         "Но сначала по магазинам!!"
-
-
-        call screen room_morning
+        jump wardrobe

@@ -2,9 +2,9 @@ init:
     $ money = 0 
     $ day = 1
     $ current_time = "morning"  # morning/evening
-    $ available_jobs = ["cleaner", "shop"]  # Доступные работы
+    $ available_jobs = []  # Доступные работы
     $ unlocked_jobs = []  # Открытые работы
-    $ days_worked = {"cleaner": 0, "shop": 0, "bar": 0, "factory": 0}  # Статистика по работам
+    $ days_worked = {"school": 1, "snowgirl": 1, "flyers": 1, "model": 1, "advertising": 1}  # Статистика по работам
 
 label room_screen:
 
@@ -16,14 +16,14 @@ screen room_morning:
         ypos 725
         idle "heels idle.png"
         hover "heels hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump()
     
     imagebutton:
         xpos 207
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 1186
@@ -37,7 +37,7 @@ screen room_morning:
         ypos 128
         idle "wardrobe idle.png"
         hover "wardrobe hover.png"
-        action Jump("wardrobe")
+        ction Jump("wardrobe")a
 
     imagebutton:
         xpos 361
@@ -63,14 +63,14 @@ screen room_evening:
         ypos 725
         idle "heels idle.png"
         hover "heels hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump("school_day")
     
     imagebutton:
         xpos 207
         ypos 867
         idle "notebooks idle.png"
         hover "notebooks hover.png"
-        action Jump("school_day" + str(school_day))
+        action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 1186
@@ -110,7 +110,7 @@ screen stats_display_morning:
             background "stats_frame.png"
 
             vbox:
-                text "День: [day]"
+                text "День: [int(day)]"
                 text "Деньги: [money]"
 
 screen stats_display_evening:
@@ -121,5 +121,5 @@ screen stats_display_evening:
             background "stats_frame.png"
 
             vbox:
-                text "День: [day]" color "#FFFFFF"
-                text "Деньги: [money]" color "#FFFFFF"
+                text "День: [int(day)]" color "#FFFFFF" font "gui/fonts/Pacifico-Regular.ttf"
+                text "Деньги: [money]" color "#FFFFFF" font "gui/fonts/Pacifico-Regular.ttf"

@@ -388,7 +388,8 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    color "#e5488f"
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -402,6 +403,14 @@ style main_menu_text:
 
 style main_menu_title:
     properties gui.text_properties("title")
+    font "gui/fonts/playlist_script.otf"
+    size 120
+    color "#e5488f"
+    xpos -200  # ← Настройте значение по вашему вкусу (50, 80, 100 и т.д.)
+    yalign 0.2
+    outlines [    # ← Толщина, цвет, смещение X, смещение Y
+        (10, "#FFFFFF", 4, 4)     # ← Можно добавить несколько обводок
+    ]
 
 style main_menu_version:
     properties gui.text_properties("version")
@@ -503,12 +512,12 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
-
-    background "gui/overlay/game_menu.png"
+    background "#ef9ac0"
 
 style game_menu_navigation_frame:
     xsize 420
     yfill True
+    background "#ef9ac0"
 
 style game_menu_content_frame:
     left_margin 60
@@ -1186,10 +1195,11 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background "#ef9ac0"
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
+
 
 style confirm_prompt_text:
     textalign 0.5

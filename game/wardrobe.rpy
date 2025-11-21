@@ -3,11 +3,11 @@ init python:
         "teacher": {
             "name": "Учительница",
             "description": "Элегантный наряд для строгой учительницы.",
-            "idle_image": "cloth_teacher_idle.png",
+            "idle_image": "sveta teacher.png",
             "hover_image": "cloth_teacher_idle.png",
             "locked_image": "cloth_teacher_locked.png",
             "story_label": "emi_story",
-            "unlocked": False
+            "unlocked": True
         },
 
         "snowgirl": {

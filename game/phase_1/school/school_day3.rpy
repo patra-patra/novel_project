@@ -1,10 +1,7 @@
 label school_day3:
-    "Третий день"
-    $ school_day = school_day + 1
-
-    $ day = day + 1
-    $ money += 500  
-
+    $ days_worked["school"] += 1
+    $ day += 0.5
+    $ money += 50 
 
     scene bg street_evening
     with fade

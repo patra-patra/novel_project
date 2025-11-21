@@ -2,9 +2,8 @@ init:
     $ money = 0 
     $ day = 1
     $ current_time = "morning"  # morning/evening
-    $ available_jobs = []  # Доступные работы
-    $ unlocked_jobs = []  # Открытые работы
-    $ days_worked = {"school": 1, "snowgirl": 1, "flyers": 1, "model": 1, "advertising": 1}  # Статистика по работам
+    $ days_worked = {"school": 1, "snowgirl": 1, "flyers": 1, "model": 1, "advertising": 1} 
+    $ works_score = {"school": 0, "snowgirl": 0, "flyers": 0, "model": 0, "advertising": 0}
 
 label room_screen:
 
@@ -16,7 +15,7 @@ screen room_morning:
         ypos 725
         idle "heels idle.png"
         hover "heels hover.png"
-        action Jump()
+        action Jump("school_day" + str(days_worked["school"]))
     
     imagebutton:
         xpos 207
@@ -37,7 +36,7 @@ screen room_morning:
         ypos 128
         idle "wardrobe idle.png"
         hover "wardrobe hover.png"
-        ction Jump("wardrobe")a
+        action Jump("wardrobe")
 
     imagebutton:
         xpos 361

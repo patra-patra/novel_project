@@ -20,3 +20,7 @@ define ser = Character("Сергей", color="#228B22")
 define k = Character("Катя", color="#FF1493")
 define s = Character("Света", color="#FF69B4")
 define v = Character("Валентина Сергеевна", color="#8B4513")
+
+define vp = Character("Валентина Петровна", color="#8B4513")
+define elena = Character("Елена Викторовна", color="#ff69b4")
+define maria = Character("Мария Ивановна", color="#696969")

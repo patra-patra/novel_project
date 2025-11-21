@@ -172,4 +172,11 @@
         "Может, они даже предложат мне работу."
         show sveta_relaxed_2000s
         "Но сначала по магазинам!!"
-        jump wardrobe
+
+        jump wardrobe_prologue
+
+    label wardrobe_prologue:
+        scene bg pink with fade
+
+        "ddds"
+        call screen room_morning
